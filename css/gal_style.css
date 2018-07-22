@@ -1,0 +1,63 @@
+img {
+	height: 340px;
+	width: 510px;
+}
+@font-face {
+	font-family: repfont;
+	src: url("fonts/Eligible-Bold.ttf");
+}
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url("img_css/galeria2.png"); 
+}
+
+header{
+	color: white;
+	font-family: repfont;
+	font-size: 100px;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 60%;
+	height: 100%;
+	justify-content: flex-start;
+}
+
+.flex-container > div{
+	display:flex;
+	position: relative;
+	float: left;
+	margin: 10px 10px 0 0;
+	opacity: 0.5;
+}
+
+.flex-container > div > img{
+	display: block;
+	transform: translateZ(0);
+	transition: transform .5s;
+}
+
+.flex-container > div:hover{
+	z-index: 1;
+	opacity: 1;
+
+}
+
+.flex-container > div:hover > img{
+	border-style: solid;
+	border-color: #333;
+	border-width: 2px; 
+	border-radius: 25px;
+	transform: scale(1.5); 
+	transition:transform 1s;
+}

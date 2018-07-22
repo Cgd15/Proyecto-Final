@@ -1,0 +1,54 @@
+@font-face {
+	font-family: repfont;
+	src: url("fonts/Eligible-Bold.ttf");
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url("img_css/rep-b2.jpg");
+	background-size: cover;
+}
+
+header {
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid #333;
+	background-image: url("img_css/rep-b");
+	background-color: #333;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+article {
+	border: 3px solid #333;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	width: 60%;
+	height: 400px;
+	overflow: auto;
+	margin: auto;
+}
+
+.portada {
+	width: 20%;
+	height: 30%;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	border: 3px solid #333;
+}
+
+.titulo {
+	font-size: 34px;
+	font-family: repfont;
+}
+
